@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio QA inženjera Ivana Savovića – Team Lead specijalizovan za manuelno i automatizovano testiranje softvera i video‑igara." />
+  <title>Ivan Savović — QA Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    body {
+      background: #0f0f0f url('https://i.imgur.com/BuuAIJq.gif') center center / cover no-repeat fixed;
+      animation: backgroundFlash 3s infinite ease-in-out;
+    }
+    @keyframes backgroundFlash {
+      0%, 100% { filter: brightness(1); }
+      50% { filter: brightness(1.2); }
+    }
+    .glow-text {
+      text-shadow: 0 0 8px #7df9ff, 0 0 14px #00e0ff, 0 0 22px #00bfff;
+      color: #7df9ff;
+      animation: glowPulse 2.5s ease-in-out infinite alternate;
+    }
+    @keyframes glowPulse {
+      0% { text-shadow: 0 0 6px #00f0ff, 0 0 12px #00e0ff, 0 0 18px #00bfff; }
+      100% { text-shadow: 0 0 10px #7df9ff, 0 0 18px #00e0ff, 0 0 30px #00bfff; }
+    }
+    .lightning-border {
+      box-shadow: 0 0 15px #7df9ff, 0 0 25px #00e0ff, 0 0 40px #00bfff;
+    }
+    .lightning-button {
+      background: linear-gradient(90deg, #7df9ff, #00e0ff);
+      color: #0f172a;
+      font-weight: bold;
+      border-radius: 9999px;
+      padding: 0.75rem 1.5rem;
+      box-shadow: 0 0 10px #7df9ff, 0 0 20px #00e0ff;
+      transition: all 0.3s ease;
+    }
+    .lightning-button:hover {
+      background: #00e0ff;
+      box-shadow: 0 0 25px #00bfff, 0 0 45px #00bfff;
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-white font-sans lightning-background">
+  <!-- NAVIGATION -->
+  <nav class="bg-black bg-opacity-80 text-white sticky top-0 z-50 shadow-lg">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-3xl font-bold glow-text">Ivan Savović</h1>
+      <div class="hidden md:flex space-x-8">
+        <a href="#about" class="hover:text-cyan-400 transition">O&nbsp;meni</a>
+        <a href="#skills" class="hover:text-cyan-400 transition">Veštine</a>
+        <a href="#projects" class="hover:text-cyan-400 transition">Projekti</a>
+        <a href="#experience" class="hover:text-cyan-400 transition">Iskustvo</a>
+        <a href="#education" class="hover:text-cyan-400 transition">Edukacija</a>
+        <a href="#contact" class="hover:text-cyan-400 transition">Kontakt</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero-gradient py-20 text-center">
+    <div class="container mx-auto px-4">
+      <h2 class="text-5xl font-bold mb-6 glow-text">QA Team Lead &amp; Software Tester</h2>
+      <p class="text-lg max-w-2xl mx-auto mb-8">Iskusni i posvećeni QA inženjer sa bogatim iskustvom u manuelnom i automatizovanom testiranju softvera. Trenutno vodim cross‑functional QA timove i kombinujem tehničko znanje sa korisničkom perspektivom kako bih isporučio stabilne, brze i intuitivne proizvode.</p>
+      <a href="#contact" class="lightning-button">Kontaktiraj me</a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="py-20 bg-gray-800">
+    <div class="container mx-auto px-4 max-w-6xl flex flex-col md:flex-row items-center">
+      <!-- Image left -->
+      <div class="md:w-1/3 md:pr-12 mb-8 md:mb-0 flex justify-start">
+        <img src="https://i.imgur.com/khp3Hmf.jpg" alt="Ivan Savović" class="rounded-full w-64 h-64 object-cover lightning-border" />
+      </div>
+      <!-- Text right -->
+      <div class="md:w-2/3 text-left">
+        <h3 class="text-4xl font-bold mb-4 glow-text">O meni</h3>
+        <p class="text-lg leading-relaxed mb-4">Iskusni i posvećeni QA inženjer sa <strong>8+ godina</strong> profesionalnog iskustva, trenutno na poziciji Team Leada. Moj rad karakterišu preciznost, proaktivno rešavanje problema i mentorski pristup juniorima. Posebno me interesuju timovi koji neguju kvalitet, inovaciju i balans između posla i života – vrednosti u skladu sa norveškom radnom kulturom.</p>
+        <ul class="list-disc list-inside space-y-2 text-base">
+          <li>Fokus na <strong>funkcionalno, regresiono i istraživačko testiranje</strong></li>
+          <li>Automatizacija testova uz Selenium, Python i AI‑pogonjenu analitiku</li>
+          <li>UI/UX validacija, praćenje korisničkog iskustva i performansi</li>
+          <li>Agile/Scrum praksa, vođenje QA tima i cross‑team kolaboracija</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="py-20 bg-gray-900">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-4xl font-bold mb-6 glow-text">Ključne veštine</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-base">
+        <div class="p-4 rounded-lg bg-gray-800 lightning-border">Funkcionalno, regresiono &amp; exploratorno testiranje</div>
+        <div class="p-4 rounded-lg bg-gray-800 lightning-border">Test planiranje, dizajn slučajeva &amp; izvršavanje</div>
+        <div class="p-4 rounded-lg bg-gray-800 lightning-border">Automatizacija (Selenium, Python, Cypress POC)</div>
+        <div class="p-4 rounded-lg bg-gray-800 lightning-border">Defect tracking &amp; root‑cause analiza</div>
+        <div class="p-4 rounded-lg bg-gray-800 lightning-border">UI/UX &amp; performansno testiranje</div>
+        <div class="p-4 rounded-lg bg-gray-800 lightning-border">Agile/Scrum &amp; vođenje tima</div>
+        <div class="p-4 rounded-lg bg-gray-800 lightning-border">Alati: Jira, TestRail, Zephyr, Postman, Xcode</div>
+        <div class="p-4 rounded-lg bg-gray-800 lightning-border">Cloud: AWS, GCP, Microsoft Azure</div>
+        <div class="p-4 rounded-lg bg-gray-800 lightning-border">Jezici: srpski, engleski, norveški, ruski (osn.)</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="py-20 bg-gray-800">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-4xl font-bold mb-6 glow-text">Projektni portfolio</h2>
+      <ul class="text-left max-w-4xl mx-auto list-disc list-inside space-y-4 text-base leading-relaxed">
+        <li><strong>BridgeHead Software – Healthcare Data Management Suite</strong> (UK/US) – Enterprise QA, regresije i integracije (Oct&nbsp;2022 – Jan&nbsp;2025).</li>
+        <li><strong>AI‑Driven QA Automation POC</strong> – Python + OpenAI za generisanje test slučajeva i detekciju bugova u Unity prototipovima.</li>
+        <li><strong>Color&nbsp;Merge</strong> – iOS/Android puzzle igra – kompletna QA strategija, smoke/regression paketi &amp; korisnički feedback.</li>
+        <li><strong>Web MMO Browser Game Prototype</strong> – Balans, gameplay QA &amp; load test skripte (JMeter).</li>
+        <li><strong>Niš Express Inventory System</strong> – Backend QA &amp; integracije za povezanost skladišta i prodaje.</li>
+        <li><strong>Global Game Jam &amp; Ludum Dare</strong> – Ekspresno QA testiranje i priprema bug lista za game‑jam timove.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="py-20 bg-gray-900">
+  <div class="container mx-auto px-4 text-center">
+    <h2 class="text-4xl font-bold mb-6 glow-text">Radno iskustvo</h2>
+    <div class="max-w-4xl mx-auto text-center space-y-8 text-base leading-relaxed">
+      <div>
+        <h3 class="text-2xl font-bold">Team Lead / QA Engineer – Ascalab (BridgeHead&nbsp;Software)</h3>
+        <p class="text-gray-400">Oct&nbsp;2022 – Jan&nbsp;2025</p>
+        <p class="mt-2">Vodio QA tim u Agile okruženju, upravljao sprint zadacima u Jiri i obezbedio pravovremene isporuke. Kreirao User Stories i test planove Gherkin metodom. Radio na AWS, GCP i Azure. Mentorisao juniore i uveo AI-asistiranu automatizaciju testova.</p>
+      </div>
+      <div>
+        <h3 class="text-2xl font-bold">Software Engineer – IRVAS d.o.o.</h3>
+        <p class="text-gray-400">Feb&nbsp;2018 – Oct&nbsp;2022</p>
+        <p class="mt-2">Razvio HR i payroll module za Klinički centar Crne Gore. Predvodio razvoj inventarskog sistema za Niš Express. Customizovao softver za Eye Clinic Maja radi bolje upravljanja podacima.</p>
+      </div>
+      <div>
+        <h3 class="text-2xl font-bold">Freelance QA Engineer – iOS aplikacije</h3>
+        <p class="text-gray-400">Sep&nbsp;2016 – Jan&nbsp;2018</p>
+        <p class="mt-2">Testirao iOS aplikacije, koristio Xcode za crash logove, i bug tracker u Jiri. Fokus na regresiju i UI/UX konzistentnost.</p>
+      </div>
+      <div>
+        <h3 class="text-2xl font-bold">Computer Sales &amp; Service Specialist – Jakov System</h3>
+        <p class="text-gray-400">Apr&nbsp;2014 – Sep&nbsp;2016</p>
+        <p class="mt-2">Diagnostika i popravka računara, korisnička podrška i prodaja računarske opreme.</p>
+      </div>
+      <div>
+        <h3 class="text-2xl font-bold">Multimedia Project Assistant – Singidunum University</h3>
+        <p class="text-gray-400">May&nbsp;2012 – Apr&nbsp;2014</p>
+        <p class="mt-2">Video montaža i animacija obrazovnog sadržaja u Adobe Premiere i After Effects.</p>
+      </div>
+      <div>
+        <h3 class="text-2xl font-bold">IT Support Technician – MaxBet Sports Betting</h3>
+        <p class="text-gray-400">Jan&nbsp;2010 – May&nbsp;2012</p>
+        <p class="mt-2">IT podrška na terenu za POS sisteme i kladioničarske terminale.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="py-20 bg-gray-800">
+  <div class="container mx-auto px-4 text-center">
+    <h2 class="text-4xl font-bold mb-6 glow-text">Edukacija &amp; Sertifikati</h2>
+    <div class="max-w-4xl mx-auto text-center space-y-4 text-base">
+      <p><strong>BSc – Business Informatics</strong><br/>Singidunum University, Niš<br/><span class="text-gray-400">Sep 2005 – Dec 2009</span></p>
+      <p><strong>Android Developer</strong><br/>IT Centar Niš<br/><span class="text-gray-400">Aug 2018 – Feb 2019</span></p>
+      <p><strong>iOS Developer</strong><br/>Crossover Apple Centar Beograd<br/><span class="text-gray-400">Sep 2015 – Jul 2016</span></p>
+    </div>
+  </div>
+</section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-20 bg-gray-800">
+    <div class="container mx-auto px-4 max-w-2xl text-center">
+      <h2 class="text-4xl font-bold mb-6 glow-text">Kontakt</h2>
+      <p class="mb-4">Otvoreni ste za saradnju ili imate QA poziciju u gejming/IT industriji? Pišite ili pozovite!</p>
+      <p class="mb-2"><i class="fa-solid fa-phone mr-2 text-cyan-400"></i><a href="tel:+4798484061" class="text-cyan-400 underline">+47&nbsp;984&nbsp;84&nbsp;061</a></p>
+      <p class="mb-2"><i class="fa-solid fa-envelope mr-2 text-cyan-400"></i><a href="mailto:ivan.savovic@yahoo.com" class="text-cyan-400 underline">ivan.savovic@yahoo.com</a></p>
+      <p class="mb-2"><i class="fa-brands fa-linkedin mr-2 text-cyan-400"></i><a href="https://www.linkedin.com/in/ivansavovic/" target="_blank" class="text-cyan-400 underline">linkedin.com/in/ivansavovic</a></p>
+      <p class="mb-2"><i class="fa-brands fa-github mr-2 text-cyan-400"></i><a href="https://github.com/ivan-savovic" target="_blank" class="text-cyan-400 underline">github.com/ivan-savovic</a></p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-black py-6 text-center text-gray-500">
+    <p>&copy; 2025 Ivan Savović. Sva prava zadržana.</p>
+  </footer>
+</body>
+</html>
